@@ -80,26 +80,26 @@ console.log(output);
 
 
 
+
+
 // megaFriend
 
-function megaFriend(friend) {
-
-    var maxName = friend[0];
-
-
-    for (let i = 0; i < friend.length; i++) {
-
-        if (typeof friend[i] != "string" || friend[i]=== " ") {
-            return "invalid input";
-        } else if ((friend[i].length) > maxName.length) {
-            maxName = friend[i];
-        }
-
+function megaFriend(names){
+    if(!Array.isArray(names)){
+        return "Invalid Input";                                                    
+    }                              
+    else if(names.length==0){
+        return "Invalid Input";                                                    
     }
-    return maxName;
-
-
-
+    else{
+        var largeName = "";                                                       
+        for(var i=0; i<names.length; i++){                                           
+            if(names[i].length > largeName.length){
+                largeName = names[i];                                             
+            }
+        }
+        return largeName;                                                       
+    }
 }
-var names = megaFriend(["mehedi", "anik", "parves", "rasel"]);
+var names = megaFriend(["00000", "anik", "parves", "rasel"]);
 console.log(names);
