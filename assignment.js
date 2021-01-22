@@ -1,4 +1,8 @@
 
+//  https://github.com/mehedi-hasan-anik/assignment
+
+
+
 
 
 
@@ -86,7 +90,7 @@ function megaFriend(friend) {
     for (let i = 0; i < friend.length; i++) {
 
         if (typeof friend[i] != "string" || friend[i]=== " ") {
-            return "invalid";
+            return "invalid input";
         } else if ((friend[i].length) > maxName.length) {
             maxName = friend[i];
         }
