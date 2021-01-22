@@ -1,5 +1,5 @@
 
-//  https://github.com/mehedi-hasan-anik/assignment
+//  
 
 
 
@@ -98,8 +98,17 @@ function megaFriend(names){
                 largeName = names[i];                                             
             }
         }
-        return largeName;                                                       
+        if(largeName==" "){
+            return "Invalid Input"
+        }
+        else{
+            return largeName;                                                    
+        }                                                      
     }
 }
-var names = megaFriend(["00000", "anik", "parves", "rasel"]);
+var names = megaFriend([" ", " ", "mehediii ", "anik "]);
 console.log(names);
+
+
+
+
