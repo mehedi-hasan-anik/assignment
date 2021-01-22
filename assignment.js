@@ -12,7 +12,7 @@
 function kilometerToMeter(number) {
     var result;
     if (number < 0) {
-        return result = "invalid input";
+        return  "invalid input";
     } else {
         result = (number * 1000);
         return result;
